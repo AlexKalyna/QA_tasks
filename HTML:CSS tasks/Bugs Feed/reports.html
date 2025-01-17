@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel='icon' href='favicon.png' type='image/x-icon'/>
+	<script src="https://kit.fontawesome.com/8c5f8983b2.js" crossorigin="anonymous"></script>
+	<title>Reports</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<nav>
+					<img src="img/logo2.png" alt="logo" class="logo">
+					<ul class="menu">
+						<li><a href="index.html" class="main">BUGGS FEED</a></li>
+						<li><a href="reports.html">REPORTS</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header> 
+		<div class="content">
+			<div class="container-content">
+				<div class="bug__row">
+					<div class="bug__item">
+						<div class="bug__reporter">
+							<img src="img/avatar.png" alt="" class="avatar">
+							<span class="reporter__name">Oleksandr Kalyna</span>
+						</div>
+						<div class="bug__status">
+							<p class="status">in progress
+							</p>
+						</div>
+						<div class="bug__summary">
+							<span class="summary main_title">Warning “this field is required” isn’t displayed below the “Other” mandatory input after trying to save empty feedback.
+							</span>
+						</div>
+						<div class="bug__description">
+							<span class="bug__description_title title">Description:</span>
+							<span class="bug__description_text text">Warning “this field is required” isn’t displayed below the “Other” mandatory input after trying to save empty feedback. <u>Notice:</u> this bug can be reproduced on all feedback templates with the “Other” mandatory input included (“1 Month Teach Lead Feedback” and/or “PR: Manager & Teach Lead Feedback (Designer)”).
+							</span>
+						</div>
+						<div class="bug__preconditions">
+							<div class="bug__preconditions_title title">Preconditions:</div>
+							<div class="bug_preconditions_list text">
+								<ul class="preconditions">
+									<li>Any opened (not closed or canceled) event (e.g., for Sandy Adams) is created;</li>
+									<li>Feedback requests (“1 Month Teach Lead Feedback” and/or “PR: Manager & Teach Lead Feedback (Designer)”) are sent.</li>
+									<li>The user is logged into the system https://impulse-dev.mev.cloud/ as an employee requested for leaving feedback (e.g., User Admin (admin@mev.com / pass)).</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bug__steps">
+							<div class="bug__steps_title title">Steps to reproduce:</div>
+							<div class="bug_steps_list text">
+								<ol class="steps"> 
+									<li>Click on the “Calendar” in the left sidebar;
+								Choose the event (see preconditions) in the list and click on its link;</li>
+									<li>Click on the “Feedback” tab;</li>
+									<li>Click on the “+Add” button of any related to the user feedback;</li>
+									<li>Scroll down and click on the “Save” button.</li>
+									<li>Pay attention to the required fields (marked with asterisk ‘*’).</li>
+								</ol>
+							</div>
+						</div>
+						<div class="bug__actual">
+							<span class="bug__actual_title title">Actual result:</span>
+					 		<span class="bug__actual_text text">Warning “this field is required” isn’t displayed below the “Other” mandatory input.</span>
+						</div>
+						<div class="bug__expected">
+							<span class="bug__expected_title title">Expected result:</span>
+							<span class="bug__expected_text text">Warning “this field is required” is displayed below all mandatory fields (marked with asterisk ‘*’).</span>
+						</div>
+						<div class="bug__environment">
+							<span class="bug__environment_title title">Environment:</span>
+							<span class="bug__environment_text text">Google Chrome, version 79.0.3945.130</span>
+						</div>
+						<div class="bug__attachments">
+							<span class="bug__attachments_title title">Attachments:</span>
+							<div class="bug__attachments_content">
+								<a href="img/bug_1scale (2).png" class="scale" target="new">
+									<img src="img/bug_1.png" alt="random image">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content color">
+			<div class="container-content">
+				<div class="bug__row">
+					<div class="bug__item">
+						<div class="bug__reporter">
+							<img src="img/jas.png" alt="" class="avatar">
+							<span class="reporter__name">Jennifer Aniston</span>
+						</div>
+						<div class="bug__status">
+							<p class="status">in progress</p>
+						</div>
+						<div class="bug__summary">
+							<span class="summary main_title">Blank list of feedback givers are displayed in the 'Feedback' tab after reLogining with another user.</span>
+						</div>
+						<div class="bug__description">
+							<span class="bug__description_title title">Description:</span>
+							<span class="bug__description_text text">Blank list of feedback givers are displayed in the 'Feedback' tab after reLogining with another user. <u>Notice:</u> It is hard to reproduce current bug (it was possible to reproduce it only twice in recent time).
+							</span>
+						</div>
+						<div class="bug__preconditions">
+							<div class="bug__preconditions_title title">Preconditions:</div>
+							<div class="bug_preconditions_list text">
+								<ul class="preconditions">
+									<li>PR event has been created;</li>
+									<li>Requests for giving feedbacks were sent, feedbacks were completed;</li>
+									<li>The user is loged in to the system as a feedback giver.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bug__steps">
+							<div class="bug__steps_title title">Steps to reproduce:</div>
+							<div class="bug_steps_list text">
+								<ol class="steps"> 
+									<li>Click on the “Calendar” in the left sidebar;</li>
+									<li>Go to the Performance Review 'General'tab: Employees / name of user / Performance Review;</li>
+									<li>Click on the Feedback tab and observe the list of feedback givers;</li>
+									<li>Click on profile icon and then 'Logout' in dropdown menu;</li>
+									<li>Login to the system as admin who wasn't requested for giving feedback;</li>
+									<li>Observe the list of feedback givers, empty browser cache and see the result.</li>
+								</ol>
+							</div>
+						</div>
+						<div class="bug__actual">
+							<span class="bug__actual_title title">Actual result:</span>
+					 		<span class="bug__actual_text text">Blank list is displayed. (Breadcrumbs: Employees > name of user > Performance Review > Give Feedback.)</span>
+						</div>
+						<div class="bug__expected">
+							<span class="bug__expected_text text">List of feedback givers is displayed. (Breadcrumbs: Employees > name of user > Performance Review > Feedback.)</span>
+						</div>
+						<div class="bug__environment">
+							<span class="bug__environment_title title">Environment:</span>
+							<span class="bug__environment_text text">Google Chrome, v. 78.0.3904.108 (64bit)</span>
+						</div>
+						<div class="bug__attachments">
+							<span class="bug__attachments_title title">Attachments:</span>
+							<div class="bug__attachments_content">
+								<a href="img/bug_2scale (1).png" class="scale" target="new">
+									<img src="img/bug_2.png" alt="random image">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__column">
+						<p class="footer__name">Oleksandr Kalyna</p>
+						<p>&copy; 2020 All Rights Reserved</p>
+					</div>
+					<div class="footer__column">
+						<p>FOLLOW US</p>
+						<p class="footer__social"></p>
+						<p class="footer__social-icons">
+							<a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin"></i></a>
+							<a href="https://www.telegram.com" target="blank"><i class="fab fa-telegram"></i></a>
+							<a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+							<a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+						</p>
+					</div>
+					<div class="footer__column">
+						<div ><a href="contact.html" class="button" target="blank">Contact Us</a></div>
+						<p>oleksandr.kalyna@mev.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

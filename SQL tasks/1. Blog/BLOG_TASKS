@@ -1,0 +1,28 @@
+Requirements:
+
+1. Design a database in the form of an ER diagram for the specified subject areas (tasks);
+2. Generate a SQL dump to the database based on the ER diagram;
+3. Write requests in accordance with the requirements described in each task.
+
+
+Tasks:
+
+- Create Blog database
+
+Subject area:
+• The blog contains posts.
+• Each post has a title, text, date and publication author.
+• There may be several thematic tags in posts.
+• All tags are unique among themselves and cannot be repeated in the same post.
+
+
+- Create the following queries:
+
+1.1 Display the number of all posts.
+1.2 Display the number of posts published for the previous day.
+1.3 Display the last 5 published posts.
+1.4 Display all posts with a list of tags separated by commas.
+1.5 Display all posts that do not have tags.
+1.6 Display all posts whose titles begin with the letter 'S'.
+1.7 For each tag, display the number of posts.
+1.8 Display the top 5 users based on the number of published tags.

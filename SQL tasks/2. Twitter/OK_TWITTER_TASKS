@@ -1,0 +1,30 @@
+Requirements:
+
+1. Design a database in the form of an ER diagram for the specified subject areas (tasks);
+2. Generate a SQL dump to the database based on the ER diagram;
+3. Write requests in accordance with the requirements described in each task.
+
+
+Tasks:
+
+- Create Twitter database
+
+Subject area:
+• System users can publish tweets.
+• Published tweets are displayed on the user's feed.
+• Each user can view another user's feed and leave comments on tweets.
+• You can leave many comments on one tweet.
+• A user may have followers - this is someone who is subscribed to the updates of the second user.
+• The tweets of all followers are displayed in the user's feed in the mix with his tweets.
+
+
+- Create the following queries:
+
+2.1. Display the last 5 published tweets.
+2.2. Display the average age of all Twitter users.
+2.3. Display the number of followers for each user.
+2.4. Display users who have at least one follower.
+2.5. List users who have no tweets.
+2.6. Display the number of comments for each tweet.
+2.7. Display all tweets (including all tweets of followers) for this user, sorted by publication date (last from top).
+2.8. Display all comments that were published in the last 10 hours.
